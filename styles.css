@@ -1,0 +1,55 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: monospace;
+  background: rgb(108, 183, 255);
+  background: linear-gradient(
+    63deg,
+    rgba(108, 183, 255, 1) 0%,
+    rgba(57, 46, 245, 1) 87%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+body * {
+  font-family: inherit;
+  font-size: 13px;
+  margin: 10px;
+}
+
+#cucumber,
+#csv {
+  width: 90vw;
+  height: 30vh;
+  margin: 0px 10px;
+  background: transparent;
+  border: none;
+}
+
+#cucumber:focus,
+#csv:focus,
+#filename:focus {
+  outline: none;
+}
+
+#filename {
+  margin-left: 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+#download {
+  margin-left: 10px;
+}
+
+#toggle {
+}
+.flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
