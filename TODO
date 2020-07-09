@@ -1,0 +1,1 @@
+- move id strings to shared location within each feature. Or use class getter but needs to be easy and clean. 

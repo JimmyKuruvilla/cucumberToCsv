@@ -1,4 +1,4 @@
-import { removeSpaces } from './shared.js';
+import { removeSpacesInArr } from '../shared.js';
 
 export class CucumberHeader {
   //raw: | data_version | event_id                  | mean            | std_dev     | total_exposure | rate                         |
@@ -6,7 +6,7 @@ export class CucumberHeader {
 
   constructor(str) {
     this.raw = str;
-    this.value = removeSpaces(this.lineToArray(this.replacePipes(this.raw)));
+    this.value = removeSpacesInArr(this.lineToArray(this.replacePipes(this.raw)));
   }
 
   replacePipes(str) {

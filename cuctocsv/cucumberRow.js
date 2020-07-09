@@ -1,4 +1,4 @@
-import { removeSpaces } from './shared.js';
+import { removeSpacesInArr } from '../shared.js';
 
 export class CucumberRow {
   //raw: | 16.0         | 2847001, 2847001, 2847007 | -100, -101, 102 | 50, 51, -52 | 200, 201, 202  | 1.00E-10, 1.00E-10, 1.00E-10 |
@@ -6,7 +6,7 @@ export class CucumberRow {
 
   constructor(str) {
     this.raw = str;
-    this.value = removeSpaces(this.getRows(this.raw));
+    this.value = removeSpacesInArr(this.getRows(this.raw));
   }
 
   getRows(str) {

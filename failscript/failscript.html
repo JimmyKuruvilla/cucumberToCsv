@@ -1,0 +1,24 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FailScript</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+  </head>
+  <body>
+
+    <div><textarea id="string-input"></textarea></div>
+
+    <div class="flex-row">
+      <label>filename<input type="text" id="filename"></input></label>
+      <a id="download" download href="">
+        <button onclick="download()">Download</button>
+      </a>
+    </div>
+
+    <div><pre id="demo"></pre></div>
+
+    <script type="module" src="./failscript.js"></script>
+  </body>
+</html>

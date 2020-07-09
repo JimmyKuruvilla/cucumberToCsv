@@ -21,8 +21,8 @@ body * {
   margin: 10px;
 }
 
-#cucumber,
-#csv {
+#string-input,
+#demo {
   width: 90vw;
   height: 30vh;
   margin: 0px 10px;
@@ -30,8 +30,8 @@ body * {
   border: none;
 }
 
-#cucumber:focus,
-#csv:focus,
+#string-input:focus,
+#demo:focus,
 #filename:focus {
   outline: none;
 }
